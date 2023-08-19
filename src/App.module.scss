@@ -1,0 +1,21 @@
+@import "./variables";
+
+.app {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  gap: 64px;
+  padding: 20px 0;
+
+  @media (min-width: $tablet) {
+    height: 100vh;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  @media (min-width: $desktop) {
+    justify-content: center;
+    gap: 128px;
+  }
+}

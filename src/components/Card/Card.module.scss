@@ -1,0 +1,53 @@
+@import "../../variables";
+
+.card {
+  background-color: $white;
+  width: 100%;
+  max-width: 304px;
+  padding: 32px;
+  border-radius: 8px;
+
+  &__image-wrapper {
+    position: relative;
+  }
+
+  &__content-wrapper {
+    margin-top: 32px;
+  }
+
+  &__name {
+    font-size: $sm;
+    font-weight: $medium;
+    line-height: 20px;
+    color: $black;
+  }
+
+  &__list-price {
+    font-size: $sm;
+    font-weight: $medium;
+    line-height: 20px;
+    color: $gray-medium;
+    margin-top: 24px;
+    text-decoration: line-through;
+  }
+
+  &__best-price {
+    font-size: $lg;
+    font-weight: $semi-bold;
+    line-height: 24px;
+    color: $red;
+    margin-top: 4px;
+  }
+
+  &__installments {
+    font-size: $xs;
+    font-weight: $medium;
+    line-height: 16px;
+    color: $gray-dark;
+    margin-top: 4px;
+
+    strong {
+      color: $black;
+    }
+  }
+}
