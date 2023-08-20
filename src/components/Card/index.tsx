@@ -21,8 +21,8 @@ const Card: React.FC<ICard> = ({ product }) => {
         <WishlistButton wishlist={wishlist} setWishlist={setWishlist} />
         <img
           src={product.image}
-          alt="Alt Text"
-          title="Title Text"
+          alt={product.name}
+          title={product.name}
           className={styles["card__image"]}
         />
       </div>

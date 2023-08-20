@@ -6,6 +6,7 @@ const WishlistButton = ({ wishlist, setWishlist }: IWishlistButton) => {
     <button
       className={`${styles["button"]} ${wishlist ? styles["active"] : ""}`}
       onClick={() => setWishlist(!wishlist)}
+      aria-label="Adicionar à Wishlist"
     >
       Wishlist
     </button>

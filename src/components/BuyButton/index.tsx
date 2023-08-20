@@ -7,6 +7,7 @@ const BuyButton = ({ add, setAdd }: IBuyButton) => {
       href="#"
       className={`${styles["button"]} ${add ? styles["active"] : ""}`}
       onClick={() => setAdd(!add)}
+      aria-label="Adicionar"
     >
       {add ? "Adicionado" : "Adicionar"}
     </a>
