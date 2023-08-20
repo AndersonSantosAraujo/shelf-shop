@@ -14,4 +14,24 @@
   color: $white;
   text-transform: uppercase;
   margin-top: 32px;
+  @include transition-all;
+
+  &:hover {
+    background-color: $green-2;
+  }
+
+  &.active {
+    color: $black;
+    background-color: $green-3;
+
+    &::before {
+      content: "";
+      display: block;
+      background: url("../../assets/icons/add.svg") no-repeat center center;
+      background-size: contain;
+      width: 24px;
+      height: 24px;
+      margin-right: 12px;
+    }
+  }
 }

@@ -11,4 +11,40 @@
   height: 48px;
   @include border-radius-total;
   background-color: $white-2;
+  font-size: 0;
+  @include transition-all;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: block;
+    background: url("../../assets/icons/heart.svg") no-repeat center center;
+    background-size: contain;
+    width: 24px;
+    height: 21px;
+  }
+
+  &:hover {
+    background-color: $pink;
+
+    &::before {
+      background: url("../../assets/icons/heart-hover.svg") no-repeat center
+        center;
+      background-size: contain;
+    }
+  }
+
+  &.active {
+    background-color: $red-2;
+
+    &::before {
+      background: url("../../assets/icons/heart-active.svg") no-repeat center
+        center;
+      background-size: contain;
+    }
+
+    &:hover {
+      background-color: $red-3;
+    }
+  }
 }

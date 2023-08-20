@@ -1,12 +1,14 @@
-import React from "react";
 import styles from "./WishlistButton.module.scss";
-import HeartGray from "./Icons/HeartGray";
+import { IWishlistButton } from "../../interfaces";
 
-const WishlistButton = () => {
+const WishlistButton = ({ wishlist, setWishlist }: IWishlistButton) => {
   return (
-    <div className={styles["button"]}>
-      <HeartGray />
-    </div>
+    <button
+      className={`${styles["button"]} ${wishlist ? styles["active"] : ""}`}
+      onClick={() => setWishlist(!wishlist)}
+    >
+      Wishlist
+    </button>
   );
 };
 

@@ -6,7 +6,7 @@ const App = () => {
   const products: IProduct[] = [
     {
       id: 1,
-      image: "/assets/images/product-1.png",
+      image: "product.png",
       name: "Monitor LED 27'' Gamer Curvo Samsung  1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
       listPrice: 2813,
       bestPrice: 2599,
@@ -15,7 +15,7 @@ const App = () => {
     },
     {
       id: 2,
-      image: "/assets/images/product-2.png",
+      image: "product.png",
       name: "Monitor LED 27'' Gamer Curvo Samsung  1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
       listPrice: 2813,
       bestPrice: 2599,

@@ -1,8 +1,16 @@
-import React from "react";
+import { IBuyButton } from "../../interfaces";
 import styles from "./BuyButton.module.scss";
 
-const BuyButton = () => {
-  return <div className={styles["button"]}>Adicionar</div>;
+const BuyButton = ({ add, setAdd }: IBuyButton) => {
+  return (
+    <a
+      href="#"
+      className={`${styles["button"]} ${add ? styles["active"] : ""}`}
+      onClick={() => setAdd(!add)}
+    >
+      {add ? "Adicionado" : "Adicionar"}
+    </a>
+  );
 };
 
 export default BuyButton;

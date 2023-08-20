@@ -11,7 +11,12 @@ $gray-dark: #737375;
 $gray-medium: #999a9b;
 $gray-light: #dadcde;
 $red: #f3151b;
+$red-2: #da4b4f;
+$red-3: #c22539;
 $green: #40b25c;
+$green-2: #1c6c3e;
+$green-3: #a3f9b9;
+$pink: #ffcae0;
 
 // Font Sizes
 $xs: 12px;
@@ -27,6 +32,10 @@ $bold: 700;
 // Mixins
 @mixin border-radius-total {
   border-radius: 50%;
+}
+
+@mixin transition-all {
+  transition: 0.3s;
 }
 
 // Media Queries

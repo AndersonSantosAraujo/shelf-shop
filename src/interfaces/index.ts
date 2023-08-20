@@ -11,3 +11,13 @@ export interface IProduct {
 export interface ICard {
   product: IProduct;
 }
+
+export interface IWishlistButton {
+  wishlist: boolean;
+  setWishlist: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export interface IBuyButton {
+  add: boolean;
+  setAdd: React.Dispatch<React.SetStateAction<boolean>>;
+}
